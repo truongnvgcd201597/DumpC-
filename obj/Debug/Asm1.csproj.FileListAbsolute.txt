@@ -1,0 +1,8 @@
+D:\unitop.vn\C\Asm1\Asm1\obj\Debug\Asm1.csproj.AssemblyReference.cache
+D:\unitop.vn\C\Asm1\Asm1\obj\Debug\Asm1.csproj.SuggestedBindingRedirects.cache
+D:\unitop.vn\C\Asm1\Asm1\obj\Debug\Asm1.csproj.CoreCompileInputs.cache
+D:\unitop.vn\C\Asm1\Asm1\bin\Debug\Asm1.exe.config
+D:\unitop.vn\C\Asm1\Asm1\bin\Debug\Asm1.exe
+D:\unitop.vn\C\Asm1\Asm1\bin\Debug\Asm1.pdb
+D:\unitop.vn\C\Asm1\Asm1\obj\Debug\Asm1.exe
+D:\unitop.vn\C\Asm1\Asm1\obj\Debug\Asm1.pdb
