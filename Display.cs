@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Asm1
 {
-    public class Display : Input
+    public class Display
     {
         public List<Input> inputsInfo = new List<Input>();
         public Display()
@@ -42,7 +43,6 @@ namespace Asm1
             int select = 0;
             do
             {
-                ViewChoose();
                 Console.WriteLine("------------------------------------");
                 Console.WriteLine("Please choose another one to excutable: ");
                 select = Int32.Parse(Console.ReadLine());
@@ -73,8 +73,15 @@ namespace Asm1
         }
         public void Highest()
         {
-            
-
+            Console.WriteLine("Result: ");
+            var result = inputsInfo.OrderByDescending(student => student._Grade).ToList();
+            foreach(var student in result)
+            {
+                if(student._Grade == result[0]._Grade)
+                {
+                    student.Show();
+                }
+            }
         }
     }
 }

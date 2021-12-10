@@ -44,8 +44,7 @@ namespace Asm1
         public void Show()
         {
             Console.WriteLine("------------------------------------");
-            Console.WriteLine("Here is all information you just entered: \n" +
-                "Name: {0}   |    ID: {1}    |  Grade: {2}", _FullName, _Idcode, _Grade);
+            Console.WriteLine("Name: {0}   |    ID: {1}    |  Grade: {2}", _FullName, _Idcode, _Grade);
             Console.WriteLine();
         }
         public void ViewChoose()
