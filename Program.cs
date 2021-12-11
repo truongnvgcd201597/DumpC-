@@ -7,7 +7,7 @@ namespace Asm1
     {
         static void Main(string[] args)
         {
-            Display studentInfo = new Display();
+            Processing studentInfo = new Processing();
             int choose = 0 ;
             do
             {
@@ -25,7 +25,13 @@ namespace Asm1
                         studentInfo.RankingList();
                         break;
                     case 4:
-                        studentInfo.Highest();
+                        studentInfo.ViewTopStudent();
+                        break;
+                    case 5:
+                        studentInfo.markAvg();
+                        break;
+                    case 6:
+                        studentInfo.findByGrade();
                         break;
                     default:
                         Console.WriteLine("Invalid, please re-enter");
@@ -38,7 +44,10 @@ namespace Asm1
         {
             Console.WriteLine("1. Enter student information");
             Console.WriteLine("2. Show all student information");
-            Console.WriteLine("3. Show highest grade");
+            Console.WriteLine("3. Show statistic grade");
+            Console.WriteLine("4. Show highest & lowest grade");
+            Console.WriteLine("5. Show average mark");
+            Console.WriteLine("5. Find student infomation by X");
             Console.Write("Your choose: ");
         }
     }
