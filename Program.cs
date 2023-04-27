@@ -1,18 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
+using System;
 
 namespace Asm1
 {
-     class Program
+    class Program
     {
         static void Main(string[] args)
         {
             Processing studentInfo = new Processing();
-            int choose = 0 ;
+            int choose = 0;
             do
             {
                 ShowMenu();
-                choose = Int32.Parse(Console.ReadLine());
+                int.TryParse(Console.ReadLine(), out choose);
                 switch (choose)
                 {
                     case 1:
@@ -34,22 +33,28 @@ namespace Asm1
                         studentInfo.findByGrade();
                         break;
                     default:
-                        Console.WriteLine("Invalid, please re-enter");
+                        Console.WriteLine("Invalid option, please choose again.\n");
                         break;
                 }
-            } while (choose != 5);
+            } while (choose != 7);
+            Console.WriteLine("Thank you for using our Student Management System.");
             Console.ReadKey();
         }
-       static void ShowMenu()
-{
-    Console.WriteLine("===== STUDENT MANAGEMENT SYSTEM =====\n");
-    Console.WriteLine("1. \tEnter student information");
-    Console.WriteLine("2. \tShow all student information");
-    Console.WriteLine("3. \tShow statistics for all grades");
-    Console.WriteLine("4. \tShow highest and lowest grades");
-    Console.WriteLine("5. \tShow average grade");
-    Console.WriteLine("6. \tFind student information by grade\n");
-    Console.Write("Enter your choice (1-6): ");
-}
+
+        static void ShowMenu()
+        {
+            Console.Clear();
+            Console.WriteLine("=================================");
+            Console.WriteLine("       STUDENT MANAGEMENT SYSTEM");
+            Console.WriteLine("=================================\n");
+            Console.WriteLine("1. Enter student information");
+            Console.WriteLine("2. Show all student information");
+            Console.WriteLine("3. Show statistics for all grades");
+            Console.WriteLine("4. Show highest and lowest grades");
+            Console.WriteLine("5. Show average grade");
+            Console.WriteLine("6. Find student information by grade");
+            Console.WriteLine("7. Exit\n");
+            Console.Write("Please enter your choice (1-7): ");
+        }
     }
 }
