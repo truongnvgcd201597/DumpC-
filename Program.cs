@@ -40,15 +40,16 @@ namespace Asm1
             } while (choose != 5);
             Console.ReadKey();
         }
-        static void ShowMenu()
-        {
-            Console.WriteLine("1. Enter student information");
-            Console.WriteLine("2. Show all student information");
-            Console.WriteLine("3. Show statistic grade");
-            Console.WriteLine("4. Show highest & lowest grade");
-            Console.WriteLine("5. Show average mark");
-            Console.WriteLine("5. Find student infomation by X");
-            Console.Write("Your choose: ");
-        }
+       static void ShowMenu()
+{
+    Console.WriteLine("===== STUDENT MANAGEMENT SYSTEM =====\n");
+    Console.WriteLine("1. \tEnter student information");
+    Console.WriteLine("2. \tShow all student information");
+    Console.WriteLine("3. \tShow statistics for all grades");
+    Console.WriteLine("4. \tShow highest and lowest grades");
+    Console.WriteLine("5. \tShow average grade");
+    Console.WriteLine("6. \tFind student information by grade\n");
+    Console.Write("Enter your choice (1-6): ");
+}
     }
 }
